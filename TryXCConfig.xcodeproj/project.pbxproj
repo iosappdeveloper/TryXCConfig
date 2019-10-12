@@ -49,6 +49,7 @@
 		2EE7547C234D38040055EDBC /* TryXCConfigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryXCConfigUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EE75480234D38040055EDBC /* TryXCConfigUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryXCConfigUITests.swift; sourceTree = "<group>"; };
 		2EE75482234D38040055EDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE7548F234D38C40055EDBC /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		2EE75452234D38020055EDBC = {
 			isa = PBXGroup;
 			children = (
+				2EE7548E234D389C0055EDBC /* XCConfig */,
 				2EE7545D234D38020055EDBC /* TryXCConfig */,
 				2EE75474234D38040055EDBC /* TryXCConfigTests */,
 				2EE7547F234D38040055EDBC /* TryXCConfigUITests */,
@@ -126,6 +128,14 @@
 				2EE75482234D38040055EDBC /* Info.plist */,
 			);
 			path = TryXCConfigUITests;
+			sourceTree = "<group>";
+		};
+		2EE7548E234D389C0055EDBC /* XCConfig */ = {
+			isa = PBXGroup;
+			children = (
+				2EE7548F234D38C40055EDBC /* Debug.xcconfig */,
+			);
+			path = XCConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +328,7 @@
 /* Begin XCBuildConfiguration section */
 		2EE75483234D38040055EDBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -373,11 +384,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 			};
 			name = Debug;
 		};
 		2EE75484234D38040055EDBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -426,12 +439,14 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		2EE75486234D38040055EDBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,13 +458,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.TryXCConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		2EE75487234D38040055EDBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,13 +476,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.TryXCConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		2EE75489234D38040055EDBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,7 +497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.TryXCConfigTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TryXCConfig.app/TryXCConfig";
 			};
@@ -490,6 +505,7 @@
 		};
 		2EE7548A234D38040055EDBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,7 +520,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.TryXCConfigTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TryXCConfig.app/TryXCConfig";
 			};
@@ -512,6 +527,7 @@
 		};
 		2EE7548C234D38040055EDBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,7 +540,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.TryXCConfigUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TryXCConfig;
 			};
@@ -532,6 +548,7 @@
 		};
 		2EE7548D234D38040055EDBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE7548F234D38C40055EDBC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,7 +561,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.matoria.TryXCConfigUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TryXCConfig;
 			};

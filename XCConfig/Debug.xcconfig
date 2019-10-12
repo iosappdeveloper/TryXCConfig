@@ -1,0 +1,23 @@
+//
+//  Debug.xcconfig
+//  TryXCConfig
+//
+//  Created by Matoria, Ashok on 08/10/19.
+//  Copyright © 2019 Matoria, Ashok. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Pro Tip: Drag & drop settings from project/target settings to .xcconfig file
+
+// The project configuration can be set using following tools, in precedence order low to high -
+// 1. Platform defaults
+// 2. Project xcconfig
+// 3. Project settings
+// 4. Target xcconfig
+// 5. Target settings
+
+SWIFT_VERSION = 5.0
+SWIFT_TREAT_WARNINGS_AS_ERRORS = NO
+// When a setting has no value, use this pattern "key = ;"
